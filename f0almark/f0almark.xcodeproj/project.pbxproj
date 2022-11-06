@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D68463E5291543CB00CD25F0 /* FileDialogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68463E3291543CB00CD25F0 /* FileDialogHelper.swift */; };
+		D68463E82915706C00CD25F0 /* FilePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68463E72915706C00CD25F0 /* FilePickerHelper.swift */; };
+		D68463EC2915710600CD25F0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68463EB2915710600CD25F0 /* MainView.swift */; };
+		D68463EE2915712E00CD25F0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68463EB2915710600CD25F0 /* MainView.swift */; };
+		D68463F02915862D00CD25F0 /* MainToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68463EF2915862D00CD25F0 /* MainToolbar.swift */; };
+		D68463F129158A5100CD25F0 /* MainToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68463EF2915862D00CD25F0 /* MainToolbar.swift */; };
 		D6FDFF0A2891CA0A00280A4D /* f0almarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDFEFA2891CA0A00280A4D /* f0almarkApp.swift */; };
 		D6FDFF0B2891CA0A00280A4D /* f0almarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDFEFA2891CA0A00280A4D /* f0almarkApp.swift */; };
-		D6FDFF0C2891CA0A00280A4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDFEFB2891CA0A00280A4D /* ContentView.swift */; };
-		D6FDFF0D2891CA0A00280A4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDFEFB2891CA0A00280A4D /* ContentView.swift */; };
 		D6FDFF0E2891CA0A00280A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FDFEFC2891CA0A00280A4D /* Assets.xcassets */; };
 		D6FDFF0F2891CA0A00280A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6FDFEFC2891CA0A00280A4D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D68463E3291543CB00CD25F0 /* FileDialogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDialogHelper.swift; sourceTree = "<group>"; };
+		D68463E72915706C00CD25F0 /* FilePickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerHelper.swift; sourceTree = "<group>"; };
+		D68463EB2915710600CD25F0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D68463EF2915862D00CD25F0 /* MainToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolbar.swift; sourceTree = "<group>"; };
 		D6FDFEFA2891CA0A00280A4D /* f0almarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = f0almarkApp.swift; sourceTree = "<group>"; };
 		D6FDFEFB2891CA0A00280A4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D6FDFEFC2891CA0A00280A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,23 +50,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D68463E02915433B00CD25F0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D68463E3291543CB00CD25F0 /* FileDialogHelper.swift */,
+				D68463E72915706C00CD25F0 /* FilePickerHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D68463E6291548C600CD25F0 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6FDFF092891CA0A00280A4D /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		D68463ED2915710C00CD25F0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D68463EB2915710600CD25F0 /* MainView.swift */,
+				D68463EF2915862D00CD25F0 /* MainToolbar.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		D6FDFEF42891CA0A00280A4D = {
 			isa = PBXGroup;
 			children = (
-				D6FDFEF92891CA0A00280A4D /* Shared */,
-				D6FDFF082891CA0A00280A4D /* macOS */,
-				D6FDFF022891CA0A00280A4D /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D6FDFEF92891CA0A00280A4D /* Shared */ = {
-			isa = PBXGroup;
-			children = (
+				D68463E6291548C600CD25F0 /* macOS */,
+				D68463E02915433B00CD25F0 /* Helpers */,
+				D68463ED2915710C00CD25F0 /* UI */,
 				D6FDFEFA2891CA0A00280A4D /* f0almarkApp.swift */,
 				D6FDFEFB2891CA0A00280A4D /* ContentView.swift */,
 				D6FDFEFC2891CA0A00280A4D /* Assets.xcassets */,
+				D6FDFF022891CA0A00280A4D /* Products */,
 			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		D6FDFF022891CA0A00280A4D /* Products */ = {
@@ -68,14 +96,6 @@
 				D6FDFF072891CA0A00280A4D /* f0almark.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D6FDFF082891CA0A00280A4D /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				D6FDFF092891CA0A00280A4D /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6FDFF0C2891CA0A00280A4D /* ContentView.swift in Sources */,
+				D68463F02915862D00CD25F0 /* MainToolbar.swift in Sources */,
 				D6FDFF0A2891CA0A00280A4D /* f0almarkApp.swift in Sources */,
+				D68463EC2915710600CD25F0 /* MainView.swift in Sources */,
+				D68463E82915706C00CD25F0 /* FilePickerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6FDFF0D2891CA0A00280A4D /* ContentView.swift in Sources */,
+				D68463F129158A5100CD25F0 /* MainToolbar.swift in Sources */,
 				D6FDFF0B2891CA0A00280A4D /* f0almarkApp.swift in Sources */,
+				D68463EE2915712E00CD25F0 /* MainView.swift in Sources */,
+				D68463E5291543CB00CD25F0 /* FileDialogHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +267,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -369,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -398,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

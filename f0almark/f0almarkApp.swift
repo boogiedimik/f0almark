@@ -11,7 +11,7 @@ import SwiftUI
 struct f0almarkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
